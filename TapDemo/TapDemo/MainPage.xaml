@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TapDemo.MainPage">
+    <ScrollView>
+        <VerticalStackLayout Spacing="25"
+                             Padding="30,0"
+                             VerticalOptions="Center">
+            <Label Text="Tap with primary"
+                   FontSize="18"
+                   HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Buttons="Primary"
+                                          Tapped="OnPrimaryTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="primaryTapLabel"
+                   FontSize="18" />
+            <Label Text="Tap with secondary"
+                   FontSize="18"
+                   HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Buttons="Primary"
+                                          Tapped="OnSecondaryTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="secondaryTapLabel"
+                   FontSize="18" />
+            <Label Text="Tap with either"
+                   FontSize="18"
+                   HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Buttons="Primary"
+                                          Tapped="OnEitherTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="eitherTapLabel"
+                   FontSize="18" />
+
+            <Label Text="1 Tap with primary"
+                   FontSize="18"
+                   HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Buttons="Primary"
+                                          NumberOfTapsRequired="1"
+                                          Tapped="On1PrimaryTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="primaryTap1Label"
+                   FontSize="18" />
+            <Label Text="2 Tap with secondary"
+                   FontSize="18"
+                   HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Buttons="Primary"
+                                          NumberOfTapsRequired="2"
+                                          Tapped="On2SecondaryTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="secondaryTap2Label"
+                   FontSize="18" />
+            <Label Text="3 Tap with either"
+                   FontSize="18"
+                   HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Buttons="Primary"
+                                          NumberOfTapsRequired="3"
+                                          Tapped="On3EitherTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="eitherTap3Label"
+                   FontSize="18" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
