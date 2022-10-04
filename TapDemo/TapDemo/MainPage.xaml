@@ -20,7 +20,7 @@
                    FontSize="18"
                    HorizontalOptions="Center">
                 <Label.GestureRecognizers>
-                    <TapGestureRecognizer Buttons="Primary"
+                    <TapGestureRecognizer Buttons="Secondary"
                                           Tapped="OnSecondaryTapped" />
                 </Label.GestureRecognizers>
             </Label>
@@ -30,7 +30,7 @@
                    FontSize="18"
                    HorizontalOptions="Center">
                 <Label.GestureRecognizers>
-                    <TapGestureRecognizer Buttons="Primary"
+                    <TapGestureRecognizer Buttons="Primary,Secondary"
                                           Tapped="OnEitherTapped" />
                 </Label.GestureRecognizers>
             </Label>
@@ -52,7 +52,7 @@
                    FontSize="18"
                    HorizontalOptions="Center">
                 <Label.GestureRecognizers>
-                    <TapGestureRecognizer Buttons="Primary"
+                    <TapGestureRecognizer Buttons="Secondary"
                                           NumberOfTapsRequired="2"
                                           Tapped="On2SecondaryTapped" />
                 </Label.GestureRecognizers>
@@ -63,7 +63,7 @@
                    FontSize="18"
                    HorizontalOptions="Center">
                 <Label.GestureRecognizers>
-                    <TapGestureRecognizer Buttons="Primary"
+                    <TapGestureRecognizer Buttons="Primary,Secondary"
                                           NumberOfTapsRequired="3"
                                           Tapped="On3EitherTapped" />
                 </Label.GestureRecognizers>
