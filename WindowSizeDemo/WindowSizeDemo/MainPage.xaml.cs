@@ -10,15 +10,7 @@ public partial class MainPage : ContentPage
 
 	void OnNewWindowClicked(object sender, EventArgs e)
 	{
-        try
-        {
-            Application.Current.OpenWindow(new Window(new MainPage()));
-        }
-        catch (Exception ex)
-        {
-            System.Diagnostics.Debug.WriteLine(ex);
-        }
-
+        Application.Current.OpenWindow(new Window(new MainPage()));
     }
 
     void OnCloseWindowClicked(object sender, EventArgs e)
