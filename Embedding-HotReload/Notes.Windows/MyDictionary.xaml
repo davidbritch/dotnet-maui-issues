@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="Notes.MyDictionary">
+    <Style TargetType="Button">
+        <Setter Property="BackgroundColor"
+                Value="#2196F3"/>
+    </Style>
+    <Style TargetType="StackLayout">
+        <Setter Property="Spacing"
+                Value="6" />
+    </Style>
+
+    <Style TargetType="Grid">
+        <Setter Property="RowSpacing"
+                Value="6" />
+        <Setter Property="ColumnSpacing"
+                Value="6" />
+    </Style>
+</ResourceDictionary>
