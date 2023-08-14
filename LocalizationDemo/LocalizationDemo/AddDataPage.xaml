@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LocalizationDemo.AddDataPage"
+             FlowDirection="{x:Static Device.FlowDirection}"
+             Title="AddDataPage">
+    <VerticalStackLayout Margin="20">
+        <!--<Label Text="{x:Static resx:AppResources.NameLabel}" />
+        <Entry Text="{Binding Path=Name}" />
+        <Label Text="{x:Static resx:AppResources.NotesLabel}" />
+        <Entry Text="{Binding Path=Notes}" />
+        <Label Text="{x:Static resx:AppResources.DoneLabel}" />
+        <Switch IsToggled="{Binding Path=Done}" />
+        <Button Text="{x:Static resx:AppResources.SaveButton}" />
+        <Button Text="{x:Static resx:AppResources.DeleteButton}" />
+        <Button Text="{x:Static resx:AppResources.CancelButton}" />
+        <Button Text="{x:Static resx:AppResources.SpeakButton}" />-->
+    </VerticalStackLayout>
+</ContentPage>
