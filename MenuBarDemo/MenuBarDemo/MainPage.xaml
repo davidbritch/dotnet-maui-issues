@@ -5,10 +5,19 @@
     <ContentPage.MenuBarItems>
         <MenuBarItem Text="File">
             <MenuFlyoutItem Text="Exit"
-                            Command="{Binding ExitCommand}" />
+                            Command="{Binding ExitCommand}">
+                <MenuFlyoutItem.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Alt"
+                                         Key="x" />
+                </MenuFlyoutItem.KeyboardAccelerators>
+            </MenuFlyoutItem>
         </MenuBarItem>
         <MenuBarItem Text="Locations">
             <MenuFlyoutSubItem Text="Change Location">
+                <MenuFlyoutSubItem.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Alt" 
+                                         Key="C" />
+                </MenuFlyoutSubItem.KeyboardAccelerators>
                 <MenuFlyoutItem Text="Redmond, USA"
                                 Command="{Binding ChangeLocationCommand}"
                                 CommandParameter="Redmond" />
@@ -19,19 +28,44 @@
                                 Command="{Binding ChangeLocationCommand}"
                                 CommandParameter="Berlin"/>
             </MenuFlyoutSubItem>
-            <MenuFlyoutSeparator />            
+            <MenuFlyoutSeparator />
             <MenuFlyoutItem Text="Add Location"
-                            Command="{Binding AddLocationCommand}" />
+                            Command="{Binding AddLocationCommand}">
+                <MenuFlyoutItem.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Alt"
+                                         Key="A" />
+                </MenuFlyoutItem.KeyboardAccelerators>
+            </MenuFlyoutItem>
             <MenuFlyoutItem Text="Edit Location"
-                            Command="{Binding EditLocationCommand}" />
+                            Command="{Binding EditLocationCommand}">
+                <MenuFlyoutItem.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Alt"
+                                         Key="E" />
+                </MenuFlyoutItem.KeyboardAccelerators>                
+            </MenuFlyoutItem>
             <MenuFlyoutItem Text="Remove Location"
-                            Command="{Binding RemoveLocationCommand}" />                            
+                            Command="{Binding RemoveLocationCommand}">
+                <MenuFlyoutItem.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Alt"
+                                         Key="R" />
+                </MenuFlyoutItem.KeyboardAccelerators>
+            </MenuFlyoutItem>
         </MenuBarItem>
         <MenuBarItem Text="View">
             <MenuFlyoutItem Text="Refresh"
-                            Command="{Binding RefreshCommand}" />
+                            Command="{Binding RefreshCommand}">
+                <MenuFlyoutItem.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Shift"
+                                         Key="R" />
+                </MenuFlyoutItem.KeyboardAccelerators>
+            </MenuFlyoutItem>
             <MenuFlyoutItem Text="Change Theme"
-                            Command="{Binding ChangeThemeCommand}" />
+                            Command="{Binding ChangeThemeCommand}">
+                <MenuFlyoutItem.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Ctrl"
+                                         Key="T" />
+                </MenuFlyoutItem.KeyboardAccelerators>
+            </MenuFlyoutItem>
         </MenuBarItem>
     </ContentPage.MenuBarItems>
     <Grid>
