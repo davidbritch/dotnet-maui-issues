@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MenuBarDemo.MainPage">
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="File">
+            <MenuFlyoutItem Text="Exit"
+                            Command="{Binding ExitCommand}" />
+        </MenuBarItem>
+        <MenuBarItem Text="Locations">
+            <MenuFlyoutSubItem Text="Change Location">
+                <MenuFlyoutItem Text="Redmond, USA"
+                                Command="{Binding ChangeLocationCommand}"
+                                CommandParameter="Redmond" />
+                <MenuFlyoutItem Text="London, UK"
+                                Command="{Binding ChangeLocationCommand}"
+                                CommandParameter="London" />
+                <MenuFlyoutItem Text="Berlin, DE"
+                                Command="{Binding ChangeLocationCommand}"
+                                CommandParameter="Berlin"/>
+            </MenuFlyoutSubItem>
+            <MenuFlyoutSeparator />            
+            <MenuFlyoutItem Text="Add Location"
+                            Command="{Binding AddLocationCommand}" />
+            <MenuFlyoutItem Text="Edit Location"
+                            Command="{Binding EditLocationCommand}" />
+            <MenuFlyoutItem Text="Remove Location"
+                            Command="{Binding RemoveLocationCommand}" />                            
+        </MenuBarItem>
+        <MenuBarItem Text="View">
+            <MenuFlyoutItem Text="Refresh"
+                            Command="{Binding RefreshCommand}" />
+            <MenuFlyoutItem Text="Change Theme"
+                            Command="{Binding ChangeThemeCommand}" />
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+    <Grid>
+        <Label Text="Hello world"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+    </Grid>
+</ContentPage>
