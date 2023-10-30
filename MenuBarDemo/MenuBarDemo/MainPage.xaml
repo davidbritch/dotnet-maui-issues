@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MenuBarDemo.MainPage">
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="File">
+            <MenuFlyoutItem Text="Exit"
+                            Command="{Binding ExitCommand}">
+                <MenuFlyoutItem.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Alt"
+                                         Key="x" />
+                </MenuFlyoutItem.KeyboardAccelerators>
+            </MenuFlyoutItem>
+        </MenuBarItem>
+        <MenuBarItem Text="Locations">
+            <MenuFlyoutSubItem Text="Change Location">
+                <MenuFlyoutSubItem.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Alt" 
+                                         Key="C" />
+                </MenuFlyoutSubItem.KeyboardAccelerators>
+                <MenuFlyoutItem Text="Redmond, USA"
+                                Command="{Binding ChangeLocationCommand}"
+                                CommandParameter="Redmond" />
+                <MenuFlyoutItem Text="London, UK"
+                                Command="{Binding ChangeLocationCommand}"
+                                CommandParameter="London" />
+                <MenuFlyoutItem Text="Berlin, DE"
+                                Command="{Binding ChangeLocationCommand}"
+                                CommandParameter="Berlin"/>
+            </MenuFlyoutSubItem>
+            <MenuFlyoutSeparator />
+            <MenuFlyoutItem Text="Add Location"
+                            Command="{Binding AddLocationCommand}">
+                <MenuFlyoutItem.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Alt"
+                                         Key="A" />
+                </MenuFlyoutItem.KeyboardAccelerators>
+            </MenuFlyoutItem>
+            <MenuFlyoutItem Text="Edit Location"
+                            Command="{Binding EditLocationCommand}">
+                <MenuFlyoutItem.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Alt"
+                                         Key="E" />
+                </MenuFlyoutItem.KeyboardAccelerators>                
+            </MenuFlyoutItem>
+            <MenuFlyoutItem Text="Remove Location"
+                            Command="{Binding RemoveLocationCommand}">
+                <MenuFlyoutItem.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Alt"
+                                         Key="R" />
+                </MenuFlyoutItem.KeyboardAccelerators>
+            </MenuFlyoutItem>
+        </MenuBarItem>
+        <MenuBarItem Text="View">
+            <MenuFlyoutItem Text="Refresh"
+                            Command="{Binding RefreshCommand}">
+                <MenuFlyoutItem.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Shift"
+                                         Key="R" />
+                </MenuFlyoutItem.KeyboardAccelerators>
+            </MenuFlyoutItem>
+            <MenuFlyoutItem Text="Change Theme"
+                            Command="{Binding ChangeThemeCommand}">
+                <MenuFlyoutItem.KeyboardAccelerators>
+                    <KeyboardAccelerator Modifiers="Ctrl"
+                                         Key="T" />
+                </MenuFlyoutItem.KeyboardAccelerators>
+            </MenuFlyoutItem>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+    <Grid>
+        <Label Text="Hello world"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+    </Grid>
+</ContentPage>
